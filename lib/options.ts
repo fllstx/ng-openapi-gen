@@ -1,7 +1,5 @@
-
 /** Options used by ng-openapi-gen */
 export interface Options {
-
   /** The input file or URL to the OpenAPI 3 specification, JSON or YAML, local file or URL */
   input: string;
 
@@ -68,7 +66,7 @@ export interface Options {
    *
    * Defaults to 'pascal'.
    */
-  enumStyle?: 'alias' | 'upper' | 'pascal';
+  enumStyle?: "alias" | "upper" | "pascal";
 
   /** Custom templates directory. Any `.handlebars` files here will be used instead of the corresponding default. */
   templates?: string;
@@ -76,4 +74,6 @@ export interface Options {
   /**  When specified, filters the generated services, excluding any param corresponding to this list of params. */
   excludeParameters?: string[];
 
+  /** When true, a index.ts file will be generated, that exports all generated files */
+  indexFile?: boolean;
 }
