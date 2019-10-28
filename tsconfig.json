@@ -15,7 +15,7 @@
     "paths": {
       "*": [
         "node_modules/*",
-        "lib/types/*"
+        "src/types/*"
       ]
     },
     "types": [
@@ -27,7 +27,7 @@
     ]
   },
   "include": [
-    "lib/**/*",
+    "src/**/*",
     "test/**/*"
   ]
 }

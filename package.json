@@ -22,7 +22,7 @@
   "scripts": {
     "test": "jasmine-ts tsconfig.json --config=jasmine.json",
     "tslint": "tslint -c tslint.json -p tsconfig.json",
-    "compile": "tsc --project tsconfig.json && ncp \"LICENSE\" dist && ncp \"README.md\" \"dist/README.md\" && ncp \"templates\" \"dist/templates\" && ncp \"node_modules\" \"dist/node_modules\" && rimraf \"dist/test\" && replace-in-file \"\\\"private\\\": true\" \"\\\"private\\\": false\" dist/package.json",
+    "compile": "tsc --project tsconfig.json && ncp \"LICENSE\" dist && ncp \"README.md\" \"dist/README.md\" && ncp \"templates\" \"dist/templates\" && ncp \"node_modules\" \"dist/node_modules\" && rimraf \"dist/test\"",
     "build": "npm run tslint && npm run compile && npm test",
     "publish": "npm run build && cd dist && npm publish --access public"
   },
