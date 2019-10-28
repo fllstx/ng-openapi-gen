@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const runNgOpenApiGen = require('./lib/ng-openapi-gen');
+const { runNgOpenApiGen } = require('../lib/ng-openapi-gen');
 
 // Run the main function
 runNgOpenApiGen()
