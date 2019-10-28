@@ -1,7 +1,7 @@
 import { ArgumentParser } from 'argparse';
 import pkg from '../package.json';
 import schema from '../ng-openapi-gen-schema.json';
-import { Options } from './options.js';
+import { Options } from './options';
 import fs from 'fs';
 import { kebabCase } from 'lodash';
 
