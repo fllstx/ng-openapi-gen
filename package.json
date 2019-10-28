@@ -17,10 +17,11 @@
     "url": "git+https://github.com/fllstx/ng-openapi-gen.git"
   },
   "bin": {
-    "ng-openapi-gen": "lib/index.js"
+    "ng-openapi-gen": "bin/ng-openapi-gen.js"
   },
   "main": "lib/ng-openapi-gen.js",
   "files": [
+    "bin",
     "lib",
     "templates",
     "ng-openapi-gen-schema.json"
@@ -29,8 +30,7 @@
     "test": "jasmine-ts tsconfig.json --config=jasmine.json",
     "tslint": "tslint -c tslint.json -p tsconfig.json",
     "compile": "tsc --project tsconfig.json",
-    "build": "npm run tslint && npm run compile && npm test",
-    "publish": "npm run build && cd dist && npm publish --access public"
+    "build": "npm run tslint && npm run compile && npm test"
   },
   "husky": {
     "hooks": {
