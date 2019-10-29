@@ -202,6 +202,11 @@
       "description": "When set, the ApiConfiguration file not be generated and only a custom import will be used",
       "default": "",
       "type": "string"
+    },
+    "silent": {
+      "description": "When set to true, no verbose output will be displayed.",
+      "default": "false",
+      "type": "boolean"
     }
   }
 }
