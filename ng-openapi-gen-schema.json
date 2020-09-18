@@ -197,6 +197,11 @@
       "description": "When specified, will create temporary files in system temporary folder instead of output folder",
       "default": false,
       "type": "boolean"
+    },
+    "customApiConfiguration": {
+      "description": "When set, the ApiConfiguration file not be generated and only a custom import will be used",
+      "default": "",
+      "type": "string"
     }
   }
 }
