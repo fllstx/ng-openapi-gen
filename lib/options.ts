@@ -105,4 +105,7 @@ export interface Options {
 
   /** When specified, will create temporary files in system temporary folder instead of next to output folder. */
   useTempDir?: boolean;
+
+  /** When set, the ApiConfiguration file not be generated and only a custom import will be used */
+  customApiConfiguration?: string;
 }

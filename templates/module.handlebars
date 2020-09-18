@@ -2,7 +2,11 @@
 /* eslint-disable */
 import { NgModule, ModuleWithProviders, SkipSelf, Optional } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+{{#if customApiConfiguration}}
+import { {{configurationClass}}, {{configurationParams}} } from '{{configurationFile}}';
+{{else}}
 import { {{configurationClass}}, {{configurationParams}} } from './{{configurationFile}}';
+{{/if}}
 
 {{#services}}import { {{typeName}} } from './services/{{fileName}}';
 {{/services}}

@@ -3,7 +3,11 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpResponse, HttpContext } from '@angular/common/http';
 import { {{baseServiceClass}} } from '../{{baseServiceFile}}';
+{{#if customApiConfiguration}}
+import { {{configurationClass}} } from '{{configurationFile}}';
+{{else}}
 import { {{configurationClass}} } from '../{{configurationFile}}';
+{{/if}}
 import { {{responseClass}} } from '../{{responseFile}}';
 import { {{requestBuilderClass}} } from '../{{requestBuilderFile}}';
 import { Observable } from 'rxjs';

@@ -20,6 +20,7 @@ export class Globals {
   modelIndexFile?: string;
   serviceIndexFile?: string;
   rootUrl?: string;
+  customApiConfiguration?: string;
 
   constructor(options: Options) {
     this.configurationClass = options.configuration || 'ApiConfiguration';
@@ -41,6 +42,10 @@ export class Globals {
     }
     if (options.modelIndex !== false && options.modelIndex !== '') {
       this.modelIndexFile = options.modelIndex === true || options.modelIndex == undefined ? 'models' : options.modelIndex;
+    }
+    if (options.customApiConfiguration) {
+      this.customApiConfiguration = options.customApiConfiguration;
+      this.configurationFile = this.customApiConfiguration;
     }
   }
 

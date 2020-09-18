@@ -1,4 +1,9 @@
+
+{{#if customApiConfiguration}}
+export { {{configurationClass}} } from '{{{configurationFile}}}';
+{{else}}
 export { {{configurationClass}} } from './{{{configurationFile}}}';
+{{/if}}
 export { {{baseServiceClass}} } from './{{{baseServiceFile}}}';
 export { {{requestBuilderClass}} } from './{{{requestBuilderFile}}}';
 export { {{responseClass}} } from './{{{responseFile}}}';

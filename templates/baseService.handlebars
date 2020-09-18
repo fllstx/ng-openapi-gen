@@ -2,7 +2,11 @@
 /* eslint-disable */
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+{{#if customApiConfiguration}}
+import { {{configurationClass}} } from '{{configurationFile}}';
+{{else}}
 import { {{configurationClass}} } from './{{configurationFile}}';
+{{/if}}
 
 /**
  * Base class for services
