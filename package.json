@@ -40,7 +40,7 @@
   },
   "dependencies": {
     "argparse": "^1.0.10",
-    "fs-extra": "^8.1.0",
+    "fs-extra": "^9.0.0",
     "handlebars": "^4.4.3",
     "jsesc": "^2.5.2",
     "json-schema": "^0.2.5",
