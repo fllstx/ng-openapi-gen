@@ -1,6 +1,6 @@
 {
-  "name": "ng-openapi-gen",
-  "version": "0.23.0",
+  "name": "@fullstax/ng-openapi-gen",
+  "version": "0.23.0-1",
   "license": "MIT",
   "author": "Cyclos development team",
   "description": "An OpenAPI 3 codegen for Angular 7+",
@@ -11,7 +11,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cyclosproject/ng-openapi-gen.git"
+    "url": "git+https://github.com/fllstx/ng-openapi-gen.git"
   },
   "private": true,
   "bin": {
