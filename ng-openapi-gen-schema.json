@@ -53,7 +53,7 @@
       "default": true
     },
     "modelIndex": {
-      "description": "Typescript file, without '.ts' extension that exports all models. Set to false to skip. Defaults to `models`.",
+      "description": "Typescript file, without '.ts' extension that exports all models. Set to false to skip. Defaults to `models`. DEPRECATED!",
       "default": "models",
       "anyOf": [
         {
@@ -65,7 +65,7 @@
       ]
     },
     "serviceIndex": {
-      "description": "Typescript file, without '.ts' extension that exports all services. Set to false to skip. Defaults to `services`.",
+      "description": "Typescript file, without '.ts' extension that exports all services. Set to false to skip. Defaults to `services`.  DEPRECATED!",
       "default": "services",
       "anyOf": [
         {

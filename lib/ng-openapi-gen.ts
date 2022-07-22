@@ -86,15 +86,26 @@ export class NgOpenApiGen {
       }
 
       const modelImports = this.globals.modelIndexFile || this.options.indexFile
-        ? models.map(m => new Import(m.name, './models', m.options)) : null;
+        ? models.map(m => new Import(m.name, '.', m.options)) : null;
+
+      // create in index.ts file inside the serivces folder
+      this.write('modelsIndex', { ...general, modelImports }, 'models/index');
+
+      // create custom models-index file. This is deprecated!
       if (this.globals.modelIndexFile) {
-        this.write('modelIndex', { ...general, modelImports }, this.globals.modelIndexFile);
+        this.write('modelIndex', { ...general }, this.globals.modelIndexFile);
       }
+
+      // create in index.ts file inside the serivces folder
+      this.write('servicesIndex', general, 'services/index');
+
+      // create custom services-index file. This is deprecated!
       if (this.globals.serviceIndexFile) {
         this.write('serviceIndex', general, this.globals.serviceIndexFile);
       }
+
       if (this.options.indexFile) {
-        this.write('index', { ...general, modelImports }, 'index');
+        this.write('index', general, 'index');
       }
 
       // Now synchronize the temp to the output folder
