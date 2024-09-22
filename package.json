@@ -28,7 +28,7 @@
   "dependencies": {
     "@apidevtools/json-schema-ref-parser": "^9.0.9",
     "argparse": "^2.0.1",
-    "eol": "^0.9.1",
+    "eol": "^0.10.0",
     "fs-extra": "^10.0.1",
     "handlebars": "^4.7.7",
     "jsesc": "^3.0.2",
